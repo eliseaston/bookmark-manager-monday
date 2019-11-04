@@ -2,15 +2,14 @@
 
 source 'https://rubygems.org'
 
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
-
+gem 'rake'
+gem 'shotgun'
 gem 'sinatra'
 
-# gem "rails"
 group :test do
   gem 'capybara'
   gem 'rspec'
-  gem 'rubocop'
+  gem 'rubocop', '0.76.0'
   gem 'rubocop-rails'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
