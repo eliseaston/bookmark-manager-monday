@@ -3,7 +3,8 @@ require 'sinatra/base'
 class BookmarkManager < Sinatra::Base
 
   get '/' do
+    "Hello world!"
   end
 
-  run! fi app_file == $0
+  run! if app_file == $0
 end
